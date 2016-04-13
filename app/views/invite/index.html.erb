@@ -12,9 +12,11 @@
   <!-- End Google Analytics -->
 <% end %>
 
-<div class="container" style="text-align: center; max-width: 350px;">
+<div class="container" style="text-align: center; max-width: 350px; padding-top: 20px;">
 
   <% unless @message %>
+	<h4 class="" style="margin-bottom: 40px;">Become a Shouldi tester</h4>
+
     <%= form_tag("submit", method: "post", style: "text-align: left") do %>
       <%= label_tag(:first_name, t(:first_name_label)) %>
       <%= text_field_tag :first_name, '', class: "form-control", placeholder: t(:first_name_placeholder) %><br />
